@@ -17,12 +17,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) {
             RaycastHit hit;
             Ray ray = cameraComponent.ScreenPointToRay(Input.mousePosition);
-
             if (Physics.Raycast(ray, out hit))
             {
                 Transform objectHit = hit.transform;
-
-          
+                var control = objectHit.gameObject.GetComponent<CharacterController>();
+                control.selected = !control.selected;
             }
         }
     }
