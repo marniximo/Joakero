@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
-  speed: 500
+  speed: 60
   progression: 0
   gameController: {fileID: 0}
 --- !u!64 &4327570840298768364

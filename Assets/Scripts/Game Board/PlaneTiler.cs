@@ -36,6 +36,7 @@ public class PlaneTiler : MonoBehaviour
                 var hexagon = Instantiate(hexagonPrefab, position, rotation);
                 boardMatrix[i, j] = hexagon;
                 charactersMatrix[i, j] = null;
+                hexagon.GetComponent<Renderer>().material.SetTextureOffset("_MainTex", new Vector2(Random.value*2, Random.value*2));
             }
         }
     }

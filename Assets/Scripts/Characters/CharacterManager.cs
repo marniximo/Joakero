@@ -28,7 +28,7 @@ public class CharacterManager : MonoBehaviour
             {
                 gameObject.transform.localScale = new Vector3(100, 100, 10);
                 var renderer = gameObject.GetComponent<Renderer>();
-                renderer.material.SetColor("_Color", Color.red);
+                renderer.material.SetColor("_Color", defaultColor * 3f);
                 ps = true;
             }
         }

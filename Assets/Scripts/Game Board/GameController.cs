@@ -6,7 +6,7 @@ public class GameController : MonoBehaviour
 {
     public List<GameObject> characters;
     public GameObject currentTurnCharacter = null;
-    public const int maxProgression = 1000;
+    public const int maxProgression = 100;
     public bool started = false;
 
     // Start is called before the first frame update
