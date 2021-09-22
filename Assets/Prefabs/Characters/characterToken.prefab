@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4327570840298768364}
   m_Layer: 6
   m_Name: characterToken
-  m_TagString: Untagged
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4c8735d55b7f1184a8e75fc138839e27, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,6 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
+  speed: 300
+  progression: 0
+  gameController: {fileID: 0}
 --- !u!64 &4327570840298768364
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlaneTiler : MonoBehaviour
 {
+    public GameController gameController;
     public GameObject hexagonPrefab;
     public const int SIZEX = 8;
     public const int SIZEY = 10;
@@ -17,6 +18,7 @@ public class PlaneTiler : MonoBehaviour
     {
         TilePlane();
         PlaceCharacters();
+        StartGame();
     }
 
     // Update is called once per frame
@@ -53,7 +55,12 @@ public class PlaneTiler : MonoBehaviour
                     characterPrefabs[character.z].transform.rotation
                 );
                 charactersMatrix[character.y, character.x] = characterInstance;
+                characterInstance.GetComponent<CharacterManager>().gameController = gameController;
             }
         }
+    }
+
+    void StartGame() {
+        gameController.StartGame();
     }
 }
