@@ -487,6 +487,7 @@ GameObject:
   - component: {fileID: 1075549755}
   - component: {fileID: 1075549754}
   - component: {fileID: 1075549756}
+  - component: {fileID: 1075549757}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -506,13 +507,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00ab1e9aafd778647a6a5e4b8e3b7059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameController: {fileID: 1075549757}
   hexagonPrefab: {fileID: 5803245827016373984, guid: 6d87b91be5613674a8dc1ebf587765ab, type: 3}
   characterPrefabs:
   - {fileID: 2374663960204156674, guid: 36b29f05206168e42ab40ec5df8a0bac, type: 3}
+  - {fileID: 2374663960204156674, guid: 305f2aed0c18ab8429efbc365e4bf19d, type: 3}
   characters:
   - {x: 0, y: 0, z: 0}
   - {x: 1, y: 1, z: 0}
-  - {x: 2, y: 2, z: 0}
+  - {x: 2, y: 2, z: 1}
 --- !u!4 &1075549755
 Transform:
   m_ObjectHideFlags: 0
@@ -540,6 +543,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraComponent: {fileID: 963194227}
+--- !u!114 &1075549757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075549753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e83f4dbf8927241af45234869894e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characters: []
+  currentTurnCharacter: {fileID: 0}
+  started: 0
 --- !u!1 &1195042330
 GameObject:
   m_ObjectHideFlags: 0
